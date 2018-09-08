@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="SurveyForm.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<h1 id="title">Survey Form</h1>
+<div id="main-container">
+  <p id="description">Let us know how we can improve freeCodeCamp</p>
+  <form id="survey-form">
+    <div id="field">
+      <label id="name-label" for="name">* Name:</label>
+      <input id="name" type="text" placeholder="Enter your name" required/>
+    </div>
+    <div id="field">
+      <label id="email-label" for="email">* Email:</label>
+      <input id="email" type="email" placeholder="Enter your email" required/>
+    </div>
+    <div id="field">
+      <label id="number-label" for="number">* Age:</label>
+      <input id="number" type="number" min="10" max="40" placeholder="Age" required/>
+    </div>
+    <div id="field">
+      <label id="number-label" for="dropdown">Which option best describes your current role?</label>
+      <select id="dropdown">
+        <option id="student">Student</option>
+        <option id="full-time-job">Full Time Job</option>
+      </select>
+    </div>
+    <div id="field">
+      <label id="number-label">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+      <fieldset>
+        <div id="definitely">
+      <input type="radio" id="definitely" name="recommend_response" value="Definitely"/>
+      <label id="definitely-label" for="definitely"> Definitely</label>
+    </div><div id="may_be">
+      <input type="radio" id="may_be" name="recommend_response" value="May be"/>
+      <label id="may-be-label" for="may_be"> May be</label>
+    </div>
+        
+      </fieldset>
+    </div>
+    <div id="field">
+      <label id="number-label" for="dropdown">What do you like most in FCC:</label>
+      <select id="dropdown">
+        <option>Select an option</option>
+        <option id="challenges">Challenges</option>
+        <option id="projects">Projects</option>
+      </select>
+    </div>
+    <div id="field">
+      <label id="number-label">Things that should be improved in the future
+(Check all that apply):</label>
+      <fieldset>
+        <div id="front-end">
+      <input type="checkbox" class="checkbox" id="front-end-projects" name="front-end-projects" value="front-end-projects"/>
+      <label id="front-end-projects" for="front-end-projects"> Front-end Projects</label>
+    </div>
+    <div id="front-end">
+      <input type="checkbox" id="front-end-projects" name="back-end-projects" value="back-end-projects"/>
+      <label id="back-end-projects" for="back-end-projects"> Back-end Projects</label>
+    </div>    
+      </fieldset>
+    </div>
+    <div id="field">
+      <label id="number-label" for="dropdown">Any Comments or Suggestions?</label>
+      <textarea id="comment"  name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+    <input type="submit" class="btn" id="submit" value="Submit"/>
+  </form>
+</div>
+</body>
+</html>
