@@ -1,0 +1,47 @@
+body {
+  background-color: #ffffff;
+}
+
+h1{
+  font-size: 7vw;
+}
+
+.main-container{
+  background-color:#dcdcdc;
+  margin:40px 80px 40px 80px;
+  padding:40px 0px 40px 0px;
+}
+.title{
+  padding-top:0px;
+}
+.description{
+  font-size:30px;
+}
+
+.img-container{
+  background-color:#fff;
+}
+
+.timeline{
+  margin-top:30px;
+  font-size:20px;
+}
+
+.qoute{
+  padding-left:25px;
+  color:#000000;
+  font-size:20px;
+  font-family:arial;
+}
+
+.external-info{
+  color:#000000;
+  font-size:20px;
+  font-family:arial;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
