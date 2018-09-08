@@ -3,11 +3,9 @@ body{
     text-align: center;
     font-family: 'Raleway', Helvetica, sans-serif;
     min-width: 320px;
-    font-size:1.2vw 
+    font-size:16px;
 }
-.checkbox{
-    border:2px solid #000;
-}
+
 #main-container{
 background-color: rgb(250, 250, 250);
     margin: 0 auto;
@@ -31,7 +29,7 @@ h1{
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 20px;
     margin-bottom: 20px;
-    margin-right:150px
+    margin-right:10vw
 }
 
 fieldset{
@@ -41,7 +39,7 @@ fieldset{
     margin:0;
 }
 input{
-    height: 30px;
+    height: 3vw;
     border: 1px solid #c0c0c0;
     border-radius: 2px;
     padding:5px
@@ -78,11 +76,49 @@ input[type='checkbox'] + label, input[type='radio'] + label {
 }
 
 .btn{
-    width:100px;
+    width:8vw;
     margin:auto;
     background: #59ace0;
-    height:40px;
+    height:3vw;
     border-radius:5px;
     color:#fff;
     font-size:1.2vw;
+}
+
+
+@media screen and (max-width: 500px) {
+    #main-container{
+    background-color: rgb(250, 250, 250);
+        margin: 0 auto;
+        border-radius: 4px;
+        width: 75%;
+        max-width: 900px;
+        padding: 10px;
+        padding-top: 20px;
+    }
+    h1{
+        font-size: 30px;
+        text-align:center;
+    }
+
+    
+    #field{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0 20px;
+        margin-bottom: 20px;
+        margin:0px 20px 0px 20px;
+    }
+
+    #field>label{
+        text-align: center;
+        padding-left:0px;
+    }
+    .btn{
+        width:80px;
+        height:30px;
+        margin-top:10px;
+        font-size:16px;
+    }
+
 }
