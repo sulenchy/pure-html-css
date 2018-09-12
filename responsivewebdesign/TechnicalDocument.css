@@ -1,7 +1,7 @@
 body{
     background: #ffffff;
-    font-size:18px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size:1vw;
+    font-family: 'Open Sans', sans-serif;
     padding:0;
     margin: 0;
 }
@@ -25,7 +25,7 @@ nav li{
     list-style: none;
     border-top: 1px solid #000000;
     padding: 15px 30px;
-    font-size: 20px
+    font-size: 18px
 }
 
 li a{
@@ -73,4 +73,47 @@ li p{
     background: rgb(231, 228, 228);
     margin:0;
     padding:10px;
+}
+
+
+@media screen and (max-width:500px){
+    body{
+        font-size: 15px;
+        padding:10px;
+    }
+
+    #body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        height:200px;
+        position: relative;
+        overflow-y: scroll;        
+        border:1px solid #000000;
+    }
+
+    #header{
+        width: 100%;
+        order: 1;
+        box-sizing: border-box;
+        border-right:none;
+    }
+    
+    #main-doc{
+        width:100%;
+        order: 2;
+        text-align: justify;
+        padding: 0px;
+        box-sizing: border-box;
+    }
 }
