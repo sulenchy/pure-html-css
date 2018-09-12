@@ -12,23 +12,30 @@ body{
     top: 0;
     min-height: 75px;
     display: flex;
-    background-color: #eee;
+    flex-direction: row;
+    background: #dddddd;
     padding:0 50px;
     text-align: center;
+    box-sizing: border-box;
 }
+
+.turn{
+    transform: scaleX(-1);
+}
+
 #nav-bar{
     width: 100%;
     min-height:50px;
     display: flex;
-    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 #nav-bar ul{
     list-style: none;
     padding: 5px;
     width:90%;
-    text-align: right;
-    order: 2;
+    text-align: right;   
+    box-sizing:border-box;
 }
 
 a{
@@ -39,7 +46,7 @@ a{
 li{
     display: inline;
     padding: 5px;
-    margin: 50px
+    margin: 50px;
 }
 
 main{
@@ -133,6 +140,7 @@ h4 {
     background: #dddddd;
     text-align: right;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .footer li{
@@ -140,19 +148,29 @@ h4 {
 }
 
 @media screen and (max-width:500px){
-    header{
-
+    #header{
+        min-height: 75px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-sizing: border-box;
     }
+
     li{
         display: block;
-        text-align: center;
+        margin:10px;
     }
 
     img{
         display: block;
+        margin: auto
     }
     #nav-bar ul{
-        display: block;
+        width: 100%;
+        padding:0px;
+        text-align:center;
+        box-sizing: border-box;
+        margin:0;
     }
     main{
         margin-top: 250px;
@@ -185,5 +203,17 @@ h4 {
         width:80%;
         margin: auto;
     }
-    nav{overflow: auto;}
+
+    .footer{
+        box-sizing:border-box;
+        text-align: center;
+    }
+
+    .footer nav ul{
+        padding: 0;
+    }
+
+    .footer nav ul li{
+        width:100%;
+    }
 }
