@@ -1,2 +1,2 @@
-# FreecodecampProjects. 
-Showing  my project at freecodecamp.org
+# FreecodecampProjects
+Showing my projects at freecodecamp.org
