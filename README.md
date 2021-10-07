@@ -1,4 +1,4 @@
-# Pure Html and css
+# Pure html and css
 
 This contains pages designed without any frameworks. This motivation came from freecodecamp.org
 
